@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate.temp.use_jdbc_metadata_defaults: false
+
+server:
+  port: 8888
+
+postgresql:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    jdbc-url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PW}
+
+mysql: 
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: ${MYSQL_URL}
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PS}
