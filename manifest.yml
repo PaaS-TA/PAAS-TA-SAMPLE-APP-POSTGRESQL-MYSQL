@@ -11,6 +11,6 @@ applications:
     postgresql_datasource_username: postgres
     postgresql_datasource_password: q
     mysql_datasource_driver-class-name: com.mysql.cj.jdbc.Driver
-    mysql_datasource_jdbc-url: jdbc:${vcap.services.mysql-instance.credentials.uri}
-    mysql_datasource_username: ${vcap.services.mysql-instance.credentials.username}
-    mysql_datasource_password: ${vcap.services.mysql-instance.credentials.password}
+    mysql_datasource_jdbc-url: jdbc:\${vcap.services.mysql-instance.credentials.uri}
+    mysql_datasource_username: \${vcap.services.mysql-instance.credentials.username}
+    mysql_datasource_password: \${vcap.services.mysql-instance.credentials.password}
