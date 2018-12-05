@@ -12,12 +12,19 @@ postgresql:
   datasource:
     driver-class-name: org.postgresql.Driver
     jdbc-url: ${POSTGRES_URL}
-    username: ${POSTGRES_USERNAME}
-    password: ${POSTGRES_PW}
+#    username: ${POSTGRES_USERNAME}
+#    password: ${POSTGRES_PW}
+#    jdbc-url: jdbc:postgresql://115.68.47.174:30465/postgres
+#    jdbc-url: jdbc:postgresql://45.77.19.223:5524/postgres
+    username: postgres
+    password: q
 
 mysql: 
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    jdbc-url: ${MYSQL_URL}
-    username: ${MYSQL_USERNAME}
-    password: ${MYSQL_PS}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    jdbc-url: ${MYSQL_URL}
+#    username: ${MYSQL_USERNAME}
+#    password: ${MYSQL_PS}
+    jdbc-url: jdbc:mysql://45.77.19.223:3306/test
+    username: root
+    password: q
